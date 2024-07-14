@@ -7,8 +7,8 @@ const movieID = 'tt9218128'
 const movieSearch = 'Matrix'
 const invalidMovieSearch = 'abdndjruff'
 
-describe('Get a Movie by its Title and Validate Response', () => {
-  it('Get a Movie by Its Title', () => {
+describe('IMDB API Tests', () => {
+  it('Get a Movie by its Title and Validate Response', () => {
     cy.request({
       method: 'GET',
       url: `${baseURL}/?t=${movieTitle}&apikey=${apiKey}`,
